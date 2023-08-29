@@ -73,8 +73,7 @@ const SingleProduct = () => {
                                 Category:{" "}
                                 <span>
                                     {
-                                        product.categories.data[0].attributes
-                                            .title
+                                    product.categories.data[0].attributes.title
                                     }
                                 </span>
                             </span>
@@ -101,5 +100,3 @@ const SingleProduct = () => {
 };
 
 export default SingleProduct;
-
-
