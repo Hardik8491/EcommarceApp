@@ -14,23 +14,23 @@ import {
 import "./SingleProduct.scss";
 
 const SingleProduct = () => {
-  const [quantity, setQuantity] = useState(1);
-  const { id } = useParams();
-  const { handleAddToCart } = useContext(Context);
-  const { data } = useFetch(`/api/products?populate=*&[filters][id]=${id}`);
+//   const [quantity, setQuantity] = useState(1);
+//   const { id } = useParams();
+//   const { handleAddToCart } = useContext(Context);
+//   const { data } = useFetch(`/api/products?populate=*&[filters][id]=${id}`);
 
-  const decrement = () => {
-    setQuantity((prevState) => {
-      if (prevState === 1) return 1;
-      return prevState - 1;
-    });
-  };
-  const increment = () => {
-    setQuantity((prevState) => prevState + 1);
-  };
+//   const decrement = () => {
+//     setQuantity((prevState) => {
+//       if (prevState === 1) return 1;
+//       return prevState - 1;
+//     });
+//   };
+//   const increment = () => {
+//     setQuantity((prevState) => prevState + 1);
+//   };
 
-  if (!data) return;
-  const product = data?.data?.[0]?.attributes;
+//   if (!data) return;
+//   const product = data?.data?.[0]?.attributes;
 
   return (
     <div className="single-product-main-content">
@@ -89,7 +89,7 @@ const SingleProduct = () => {
           productId={id}
           categoryId={product.categories.data[0].id}
         />
-      </div> */}
+      </div> */}go
     </div>
   );
 };
