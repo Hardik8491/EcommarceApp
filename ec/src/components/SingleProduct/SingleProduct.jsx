@@ -34,7 +34,7 @@ const SingleProduct = () => {
 
   return (
     <div className="single-product-main-content">
-      <div className="layout">
+      {/* <div className="layout">
         <div className="single-product-page">
           <div className="left">
             <img
@@ -89,7 +89,7 @@ const SingleProduct = () => {
           productId={id}
           categoryId={product.categories.data[0].id}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
