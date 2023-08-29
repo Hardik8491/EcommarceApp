@@ -103,7 +103,3 @@ const SingleProduct = () => {
 export default SingleProduct;
 
 
-git commit -m "Initial commit for the client"
-git branch -M main  # If not already named 'main'
-git remote add origin <client-repo-url>
-git push -u origin main re
